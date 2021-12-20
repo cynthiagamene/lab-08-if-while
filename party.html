@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
  <script>
-  let word = prompt ("How long 'til the party?");
-  var end = parseInt (5);
-  for(var num = 5;  end ; num = num + 1) {
-    console.log(5);
-    //count down 
+  console.log("party now!");
+
+  const stringNum = prompt("How long til the party");
+  const num = parseInt(stringNum, 10);
+
+  if (num < 1) {
+    console.log( 'party Now');
+  } else {
+    for (i = num; i > 1; i = i - 1) {
+      console.log(i);
+    }
+    console.log('party time');
   }
  </script>
 </head>
